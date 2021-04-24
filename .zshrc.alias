@@ -1,0 +1,4 @@
+# alias zshconfig="mate ~/.zshrc"
+alias vim="nvim"
+alias vi="nvim"
+

@@ -1,0 +1,40 @@
+call plug#begin('~/.vim/plugged')
+
+" lua插件
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-lua-ftplugin'
+
+" 文件边框结构
+Plug 'preservim/nerdtree'
+Plug 'Yggdroot/indentLine' 
+
+" 模糊搜索
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+" 状态栏
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+" gruvbox主题
+Plug 'morhetz/gruvbox'
+
+" 吸血鬼主题
+Plug 'dracula/vim', { 'as': 'dracula' }
+
+" 代码自动补全 
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" 括号配对
+Plug 'jiangmiao/auto-pairs'
+
+call plug#end()
+
+" 主题
+colorscheme dracula
+
+"  nerdtree
+map <C-t> :NERDTreeToggle<CR>
+
+" auto-pairs
+let g:AutoPairsFlyMode = 0
