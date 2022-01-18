@@ -4,8 +4,6 @@ alias sshcompany="ssh -p 8023 chen@121.43.140.94"
 
 
 ## 通用
-alias vim="nvim"
-alias vi="nvim"
 alias unallproxy="unset https_proxy;unset http_proxy;unset all_proxy;unset ALL_PROXY"¬
 alias clean='sudo apt autoclean'
 alias upgrade='sudo apt update && sudo apt upgrade'

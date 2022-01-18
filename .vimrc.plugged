@@ -28,6 +28,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " 括号配对
 Plug 'jiangmiao/auto-pairs'
 
+" 中英文的自动切换
+Plug 'neoclide/coc-imselect'
+
 call plug#end()
 
 " 主题
@@ -38,3 +41,4 @@ map <C-t> :NERDTreeToggle<CR>
 
 " auto-pairs
 let g:AutoPairsFlyMode = 0
+
