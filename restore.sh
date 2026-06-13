@@ -1,12 +1,16 @@
 #/bin/bash
 
-## vim
-ln -s dotfiles/.vimrc .vimrc
-ln -s dotfiles/.vimrc.coc .vimrc.coc
-ln -s dotfiles/.vimrc.plugged .vimrc.plugged
-ln -s dotfiles/.vim .vim
+## neovim
+mkdir -p .config
+ln -sf dotfiles/nvim .config/nvim
+
+## vim (legacy)
+ln -sf dotfiles/.vimrc .vimrc
+ln -sf dotfiles/.vimrc.coc .vimrc.coc
+ln -sf dotfiles/.vimrc.plugged .vimrc.plugged
+ln -sf dotfiles/.vim .vim
 
 ## zsh
-ln -s dotfiles/.zshrc .zshrc
-ln -s dotfiles/.zshrc.alias .zshrc.alias
-ln -s dotfiles/.oh-my-zsh .oh-my-zsh
+ln -sf dotfiles/.zshrc .zshrc
+ln -sf dotfiles/.zshrc.alias .zshrc.alias
+ln -sf dotfiles/.oh-my-zsh .oh-my-zsh
